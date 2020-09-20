@@ -1,0 +1,13 @@
+<div style="width: 50%;" *ngIf="chart">
+<canvas id="canvas">{{ chart }}</canvas>
+
+</div>
+
+<h2>Fetched crime</h2>
+<ul>
+<li *ngFor = "let crimestats of crimestats">
+    {{ crimestats.anti_male }}
+
+</li>
+
+</ul>
